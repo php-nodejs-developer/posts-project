@@ -1,26 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+   <!-- внешний вид компонента,
+    в template должен быть хотя бы один тег-->
+  <nav></nav>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// все необходимы импорты, например импорт других компонентов,
+// которые будут использоваться в текущем
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+export default { /* объект компонента */
+
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+/* если у компонента нет стилей, то тег style не нужен */
+/* стили будут доступны всем компонентам */
+/* с атрибутом scoped стили будут доступны только текущему компоненту */
+
+/* для использования синтаксиса препроцессора необходимо добавить
+атрибут lang с названием препроцессора, например <style lang="sass"> */
 </style>
