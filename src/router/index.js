@@ -11,6 +11,13 @@ const routes = [
     {
         path: "/posts",
         component: PostsPage
+    },
+    {
+        path: "/post/:id",
+        // ленивая загрузка компонента (ленивый импорт)
+        // - js файл с компонентом
+        // подгружается только при переходе пользователя по ссылке
+        component: () => import('../views/PostPage.vue')
     }
 ];
 
